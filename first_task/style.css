@@ -1,0 +1,237 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+}
+.container
+{
+	display:grid;
+	grid-gap: 10px;
+}
+.createblog{
+    display:none;
+}
+
+.updateblog{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: mediumvioletred;
+    color:#fff;
+}
+.title{
+    justify-self: left;
+	padding-left: 30px;
+}
+.sqrt{
+    font-size: 40px;
+    color: #fff;
+}
+.create{
+	justify-self: right;
+	padding: 10px;
+}
+.forms{
+    margin: auto;
+    right: 0;
+    left: 0;
+    width: 50%;
+    box-shadow: 0px 0px 5px #ccc;
+}
+.createblog{
+    display: grid;
+    grid-gap: 10px;
+    padding: 20px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    box-shadow: 0pc 0px 5px #ccc;
+    border-radius: 10px;
+}
+.cancel {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #e60c0c 5%, #e60c0c 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #e60c0c 5%, #e60c0c 100%);
+	background:-ms-linear-gradient(top, #e60c0c 5%, #e60c0c 100%);
+	background:linear-gradient(to bottom, #e60c0c 5%, #e60c0c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-weight:bold;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.cancel:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.cancel:active {
+	position:relative;
+	top:1px;
+}
+
+.save {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-weight:bold;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.save:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.save:active {
+	position:relative;
+	top:1px;
+}
+.create_title {
+	padding: 7px;
+	font-size: 16px;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	background-color: #FFFFFF;
+	color: #000000;
+	border-style: hidden;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+	/* text-shadow: 0px 0px 5px rgba(66,66,66,.75); */
+}
+.create_title:focus {
+	outline:none;
+}
+
+.intextarea {
+	padding: 7px;
+	font-size: 16px;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	background-color: #FFFFFF;
+	color: #000000;
+	border-style: hidden;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+	/* text-shadow: 0px 0px 5px rgba(66,66,66,.75); */
+}
+.intextarea:focus {
+	outline:none;
+}
+.footer{
+	text-align: right;
+}
+#sss{
+	display: grid;
+    grid-gap: 10px;
+}
+.updatediv{
+	/* box-shadow: 0px 0px 5px #ccc; */
+	padding: 30px;
+	border-radius: 10px;
+	border:1px solid gray;
+}
+input[name=firstname] {
+	padding: 8px;
+	font-size: 15px;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	background-color: #ffffff;
+	color: #000000;
+	border-style: inset;
+	border-radius: 5px;
+	box-shadow: 0px 0px 6px rgba(66,66,66,.75);
+	/* text-shadow: 0px 0px 5px rgba(66,66,66,.75); */
+}
+input[name=firstname] {
+	outline:none;
+}
+.formfield{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "titlefield sqrt"
+	"textareafield textareafield";
+    grid-gap: 10px;
+}
+textarea[name=lastname]{
+	padding: 8px;
+	font-size: 15px;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	background-color: #ffffff;
+	color: #000000;
+	border-style: inset;
+	border-radius: 5px;
+	box-shadow: 0px 0px 6px rgba(66,66,66,.75);
+	/* text-shadow: 0px 0px 5px rgba(66,66,66,.75); */
+}
+textarea[name=lastname]{
+	outline:none;
+}
+.sqrt{
+	grid-area: sqrt;
+}
+.titlefield{
+	grid-area: titlefield;
+}
+.textareafield{
+	grid-area: textareafield;
+}
+.updatediv:hover{
+	box-shadow: 0px 0px 5px gray;
+}
+@media (min-width: 700px) {
+	.formfield{
+		grid-template-columns: auto 20%;
+		grid-template-areas: "titlefield sqrt"
+	"textareafield textareafield";
+	}
+}
+@media only screen and (min-width: 500px){
+	.formfield{
+		
+		grid-template-columns: auto 20%;
+		grid-template-areas: "titlefield sqrt"
+	"textareafield textareafield";
+	}
+}

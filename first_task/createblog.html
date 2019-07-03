@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <div class="createblog" id="createpage">
+        <h3>Create Blog</h3>
+            <input type="text" class="create_title" id="intitle" placeholder="title">
+            <textarea name="content" id="intextarea" cols="30" rows="10" placeholder="content" class="intextarea"></textarea>
+            <div class="footer">
+                            <a href="index.html"><button class="cancel">Cancel</button></a>
+            <a href="index.html"><button id="save" onclick='insertdata()' class="save">Save</button></a>
+
+            </div>
+</div>
+<script>
+        var searchparam = new URLSearchParams(window.location.search);
+	    var getparam = searchparam.get("val");
+	    var  data = document.getElementById("intitle")	
+        console.log("RERER"+ getparam);
+        var editval = JSON.parse(localStorage.getItem('claims'));
+        console.log(editval[getparam]);
+        document.getElementById("intitle").value=editval[getparam].intitle;
+        document.getElementById("intextarea").value=editval[getparam].intextarea;
+        
+        updateVal=true;
+        </script>
+</body>
+</html>
+
